@@ -248,7 +248,22 @@ body{
     font-size: 3em;
     margin-bottom: 0.5em;
 }
-
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
 
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 800px) {
@@ -257,8 +272,22 @@ body{
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left;}
+
     div.content {margin-left: 0;}
+
+    .topnav .icon {
+        display: block;
+        text-align: center;
+    }
+
+    .navlink{
+        text-align: center; 
+        display: none !important;
+    }
+
+    .responsive{
+        display: block !important;
+    }
 
     .lead{margin:0 auto; text-align: center}
     .projects-content{
@@ -277,11 +306,3 @@ body{
     }
   }
   
-
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
