@@ -15,6 +15,10 @@ body{
     color: rgb(6, 87, 180);
 }
 
+.shadow{
+    box-shadow: 4px 7px rgba(0,0,0,0.08);
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -71,9 +75,14 @@ body{
 
 }
 
-.section-content{
+.about-content, .skills-content{
     width: 80%;
     margin: 2em auto;
+}
+
+.about p{
+    font-size: 1.5em;
+    line-height: 1.75em;
 }
 
 .section-header h2{
@@ -92,9 +101,9 @@ body{
 
 .project-card{
     border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 3px;
     width: 100%;
     cursor: pointer;
+   
 }
 
 .project-image{
@@ -165,6 +174,82 @@ body{
     vertical-align: middle;
 }
 
+.education-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.education-card{
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1em;
+}
+.education-card h3{
+    font-size: 1.5em;
+}
+.education-card h4{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.5em 0;
+
+}
+.education-card ul{
+    list-style-type: disc;
+    width: 90%;
+    margin: 0 auto;
+}
+.education-card ul li{
+    margin-bottom: 0.5em;
+}
+
+.contact-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-content a{
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.contact-content a:hover{
+    text-decoration: underline;
+}
+.contact-content ul{
+    margin-top: 4em;
+}
+
+.contact-content li{
+    margin: 1.5em;
+}
+.resume-content{
+    width: 80%;
+    margin: 2em auto;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.resume-content img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-content{
+    margin: 2em auto;
+    width: 80%;
+}
+.blog-post{
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 1em;
+}
+.blog-post h4{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 800px) {
     .sidebar {
@@ -183,8 +268,16 @@ body{
         width: 80%;
         margin: 2em auto;
     }
+    .education-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        width: 80%;
+        margin: 2em auto;
+    }
   }
   
+
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
     .sidebar a {
