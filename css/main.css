@@ -12,7 +12,7 @@ body{
     font-size: 3em;
     margin-bottom: 0.25em;
     font-weight: bold;
-    color: rgb(6, 87, 180);
+    color:  rgb(6, 87, 180);
 }
 
 .shadow{
@@ -39,7 +39,7 @@ body{
   
   /* Active/current link */
   .sidebar a.active {
-    background-color: #4CAF50;
+    background-color:rgb(6, 87, 180);
     color: white;
   }
   
@@ -253,13 +253,7 @@ body{
     background-color: #ddd;
     color: black;
   }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
+
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
@@ -288,6 +282,7 @@ body{
     .responsive{
         display: block !important;
     }
+
 
     .lead{margin:0 auto; text-align: center}
     .projects-content{
