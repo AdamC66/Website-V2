@@ -34,4 +34,26 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     })
 
+    const projectCards = document.querySelectorAll('.front')
+    const backCards = document.querySelectorAll('.back')
+    const arr = Array.prototype.slice.call(projectCards);
+    const arr2 = Array.prototype.slice.call(backCards);
+    console.log(projectCards)
+    projectCards.forEach(card => {
+        card.addEventListener('click', e =>{
+            e.currentTarget.style.opacity=0;
+            backCards[arr.indexOf(e.currentTarget)].style.opacity=1
+            backCards[arr.indexOf(e.currentTarget)].style.zIndex=1
+        })
+    });
+
+    backCards.forEach(card => {
+        card.addEventListener('click', e =>{
+            e.currentTarget.style.opacity=0;
+            projectCards[arr2.indexOf(e.currentTarget)].style.opacity=1
+            backCards[arr2.indexOf(e.currentTarget)].style.zIndex=-1
+        })
+    })
+
+
 });
