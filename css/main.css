@@ -108,11 +108,12 @@ body{
 
 .project-image{
     margin: 0 auto;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .project-image img{
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -149,14 +150,34 @@ body{
     -o-transition: opacity 1s ease-in;
     -ms-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
-    padding: 1em;
+}
+
+.back h3{
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 .back ul{
     list-style-type: disc;
-    margin-left: 0.5em;
+    margin: 2em auto;
+    width: 80%;
 }
 
+.back li{
+    margin: 0.5em 0;
+}
+
+.project-links{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.project-links a{
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+}
 
 
 .skill-card{
