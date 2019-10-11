@@ -301,8 +301,9 @@ body{
     padding: 1em;
 }
 .blog-post h4{
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.5em;
+    
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -320,6 +321,30 @@ body{
       display: none
   }
 
+  .blog-link{
+    text-decoration: none;
+  }
+
+  .blog-link > .blog-post{
+      color: black;
+      text-decoration: none;
+  }
+
+  .blog-page-post{
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      padding: 1em;
+  }
+  .blog-page-post > h1{
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 1em;
+  }
+  .blog-page-post > p{
+      text-align: justify;
+      margin-bottom: 1em;
+  }
 
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 800px) {
